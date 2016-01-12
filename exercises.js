@@ -73,6 +73,13 @@ function doubleEquals (first, second){
 console.log(doubleEquals(3,0));
 
 
+function looptoNumber(limit){
+	for(var i=0; i<limit; i++){
+		console.log("prep day" + i);
+	}
+}
+looptoNumber(4); //invoking function with (limit) value
+
 function showEachValue(characters){
 	for(var i = 0; i < characters.length; i++){
 		console.log(character[i]);
@@ -97,14 +104,71 @@ var myNewPhase= createArrayFromString(phrase);
 console.log(myNewPhase);
 
 
+var arrayNumber = [1, 2, 3, 4, 5];
+var newNumber= 0;
 
 
+function greatSummator(number){
+	for(var i=0; i<number.length; i++){		
+		newNumber += number[i];
+	}
+    console.log(newNumber);
+}
+
+greatSummator(arrayNumber);
+
+function totalUnderWhatFor(numbers){
+	var sum = 0;
+	for(var i = 0; i< numbers.length; i++){
+		var ithnumber= numbers[i];
+		sum+= ithnumber;
+		if(sum< total) {
+			console.log("true");
+		} else {
+			console.log('false');
+		}
+		return sum;
+	}
+}
+
+var total = 14;
+
+var sumNumber= [1, 4, 2, 2];
+
+console.log(totalUnderWhatFor(sumNumber));
 
 
+//different way of doing totalUnderWhatFor DRY version
+var sum=0;
+var arrary= [1, 2, 3, 4, 5];
+var totalNUm= 10;
+function totalUnderWhatFor(arr, total) {
+	for(var i=0; i< arr.length; i++){
+		sum += arr[i];
+	}
+	return (sum<totalNum);
+}
+console.log(totalUnderWhatFor(array, totalNum));
 
 
+function isTrue(bool){
+	return bool === true;
+}
 
+var someArr = [true, true, true];
+var someArr2= [true, false, true];
 
+function checkTrueValues (arr){
+	for(var i=0; i< arr.length; i++){
+		if(! isTrue(arr[i])){
+		return false;
+		}
+	}
+	return true;
+}
+
+console.log(checkTrueValues(someArr));
+console.log(checkTrueValues(someArr2));
 
 
 
