@@ -95,7 +95,9 @@ function createArrayFromString(word){
 	for(var i=0; i< word.length; i++);{
 		var currentLetter = word.charAt(i);
 	if(currentLetter !== 'A' && currentLetter !== 'a'){
-		newPhrase.push(currentLetter);}
+		newPhrase.push(currentLetter);
+	}
+
 	}
 	return newPhrase; 
 }
