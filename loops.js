@@ -40,7 +40,7 @@ var oopsArray = ["turn", ,"down", ,"for", ,"what"];
 		}
 	}
 
-console.log()
+console.log();
 
 var mygreeting = 'hi';
 if(mygreeting === 'hi') 
@@ -48,6 +48,51 @@ if(mygreeting === 'hi')
 	mygreeting += '!';
 
 console.log(mygreeting);
+
+
+
+
+var isNapTime= false; 
+var napSchedule= [false, false, true, false, true, true];
+
+function nap(schedule){
+	if(schedule === true){
+		console.log('ZzZzZzZz');
+	} else{
+		console.log('Gotta get to work!');
+		isNapTime = true;
+	}
+}
+for(var i = 0; i<napSchedule.length; i++){
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
